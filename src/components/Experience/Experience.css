@@ -1,0 +1,94 @@
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  gap: 50px;  
+  /* darkmode */
+  color: var(--black);
+}
+.first{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 100px;
+}
+.second{
+    display: flex;    
+    flex-flow: row wrap;
+    gap: 100px;
+}
+.achievement{
+    display: flex;
+    flex-direction: column; 
+    flex-flow: row wrap;   
+    align-items: center;     
+    box-shadow: 2px 2px 7px  #040403d6;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 60%;
+    height: 35vh;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 60px;
+}
+.swiper{
+    height: 60vh;    
+    padding: 20px;    
+}
+.achievement img{
+    width: 100%;
+    background-size: cover;
+  background-position: center;
+  height: 20vh;
+}
+.achievement:hover{
+transform: scale(1.1);
+transition: 0.6s ease;
+box-shadow: 2px 2px 7px  orange;
+}
+
+.achievement span{
+    color: var(--orange);
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 0px 20px 24px  #fdc50f;
+    text-align: center;        
+}
+.ra p{
+    margin-top: -5px;
+    font-size: 50px;
+    font-weight: 800;
+    color: orange;
+}
+
+
+@media screen and (max-width: 480px) {
+    .experience{
+        transform: scale(0.7);
+    }
+    .achievement{
+        width: 70% ;
+    }
+    .achievement span{
+        padding: 20px;        
+    }
+    
+    .first{
+        gap: 17px;
+    }
+    .second{
+        gap: 17px;
+    }
+    .experience{
+        height: 50vh;
+        margin-top: -100px;
+        margin-bottom: 100px;        
+    }
+    .swiper{
+        gap: 20px;
+        
+    }
+    .ra{
+    display: none;
+    }
+}
